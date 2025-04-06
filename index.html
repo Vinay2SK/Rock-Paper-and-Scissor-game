@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="game.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Rock , Paper & Scissor</h1>
+        <form>
+        
+            <input type="text" name="dis" id="dis" readonly placeholder="Make your Choice">
+         
+
+        <div>
+        <input type="button"  value="Rock" onclick="document.getElementById('dis').value='Rock' " id="humcos">
+
+        <input type="button" id="humcos" value="Paper" onclick="document.getElementById('dis').value='Paper'">
+
+        <input type="button" id="humcos" value="Scissor" onclick="document.getElementById('dis').value='Scissor'">
+
+    </div>
+    <div>   Computer Choice..... </div>
+         <input type="text" name="disp" id="comcos"  readonly placeholder="Its a Computer's choice">
+     
+     <input type="button" value="Play Game" onclick="playGame()" id="play">
+
+  
+   <div> Winner is :</div>
+   <input type="text" name="result"
+    id="result" placeholder="Play a game to get a Winner!" readonly>
+</form>
+ </div>
+<script src="game.js"></script>
+</body>
+</html>
